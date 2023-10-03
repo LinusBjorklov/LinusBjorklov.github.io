@@ -16,3 +16,8 @@
     padding: 30px;
     border: 7px solid #22AABB;
 }
+
+.b, .a, .c{
+    height: 100px;
+    width: 200px;
+}
