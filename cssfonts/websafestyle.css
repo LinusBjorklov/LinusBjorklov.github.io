@@ -17,5 +17,6 @@
 .a, .b, .c{
     box-shadow: 5px 5px black;
     width: 300px;
+    background-color: #EBF7E3;
     background-image: linear-gradient(#9BD770, #EBF7E3);
 }
