@@ -3,19 +3,19 @@ body{
 }
 
 .small{
-    font-size: small 0.5em;
+    font-size: 0.5em;
 }
 
 .normal{
-    font-size: normal 1em;
+    font-size: 1em;
 }
 
 .large{
-    font-size: large 1.5em;
+    font-size: 1.5em;
 }
 
 .larger{
-    font-size: larger 2em;
+    font-size: 2em;
 }
 
 div{
