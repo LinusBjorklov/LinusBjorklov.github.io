@@ -33,4 +33,6 @@
 div{
     background-color: #FE6A5D;
     background-image: linear-gradient(#FFB7B1,#FE6A5D);
+    width: auto;
+    height: auto;
 }
