@@ -1,0 +1,30 @@
+body{
+    background-color: #BABAF6;
+}
+
+.small{
+    font-size: small 0.5em;
+}
+
+.normal{
+    font-size: normal 1em;
+}
+
+.large{
+    font-size: large 1.5em;
+}
+
+.larger{
+    font-size: larger 2em;
+}
+
+div{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #7474EC;
+    background-image: linear-gradient(#BABAF6, #7474EC);
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    box-shadow: 5px 5px black;
+}
