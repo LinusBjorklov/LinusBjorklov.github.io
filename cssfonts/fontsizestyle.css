@@ -20,6 +20,7 @@ body{
 
 div{
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     background-color: #7474EC;
     background-image: linear-gradient(#BABAF6, #7474EC);
     margin: 10px;
