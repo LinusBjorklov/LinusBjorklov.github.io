@@ -24,6 +24,7 @@ body{
 div{
     width: 300px;
     height: auto;
+    font-size: larger;
     background-color: #6395F2;
     background-image: linear-gradient(#DEE9FC, #6395F2);
     box-shadow: 5px 5px black;
