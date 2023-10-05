@@ -2,19 +2,14 @@
 
 .a{
     font-family: 'Pixelify Sans', cursive;
-    color: green;
-    text-shadow: 1px 1px 2px black, 0 0 7 px darkblue;
 }
 
 .b{
     font-family: 'Poppins', sans-serif;
-    text-shadow: 4px 4px 4px #666666;
 }
 
 .c{
     font-family: 'Dancing Script', cursive;
-    color: coral; 
-    text-shadow: 0 0 10px #00ff00;
 }
 
 body{
@@ -32,3 +27,16 @@ div{
     margin: 25px;
 }
 
+.d{
+    color: green;
+    text-shadow: 1px 1px 2px black, 0 0 7 px darkblue;
+}
+
+.e{
+    text-shadow: 4px 4px 4px #666666;
+}
+
+.f{
+    color: coral; 
+    text-shadow: 0 0 10px #00ff00;
+}
