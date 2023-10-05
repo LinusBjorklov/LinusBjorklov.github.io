@@ -16,6 +16,10 @@ body{
     background-color: #DEE9FC;
 }
 
+span{
+    font-weight: bold;
+}
+
 div{
     width: 300px;
     height: auto;
