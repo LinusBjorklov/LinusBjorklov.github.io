@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pixelify+Sans&family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: #FFDEDB;
+}
+
+.a{
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.b{
+    font-family: 'Poppins', sans-serif;
+}
+
+.c{
+    font-family: 'Dancing Script', cursive;
+}
+
+span{
+    font-weight: bold;
+}
+
+div{
+    width: 300px;
+    height: auto;
+    background-color: #FE8176;
+    background-image: linear-gradient(#FFDEDB, #FE8176);
+    box-shadow: 5px 5px black;
+}
