@@ -3,10 +3,7 @@
     src: url(Roboto-Regular.ttf);
 }
 
-@font-face {
-    font-family:myMickeys;
-    src: url(Mickeys\ Merry\ Christmas.ttf);
-}
+
 
 body{
     background-color: #EBF7E3;
@@ -23,9 +20,9 @@ div{
 }
 
 .a{
-    font-family: h;
+    font-family:myRoboto,sans-serif;
 }
 
 .b{
-    font-family: myMickey;
+    font-family: ;  
 }
