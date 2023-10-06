@@ -1,9 +1,15 @@
 @font-face {
-    font-family:myMayestica;
-    src: url(Mayestica.otf);
+   
     font-family:myRistretto;
     src: url(ristretto.woff);
 }
+
+@font-face {
+    font-family:myMayestica;
+    src: url(Mayestica.otf);
+  
+}
+
 
 body{
     background-color: #EBF7E3;
