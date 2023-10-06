@@ -1,8 +1,8 @@
 @font-face {
     font-family:myMayestica;
     src: url(Mayestica.otf);
-    font-family:myRisteretto;
-    src: url(ristretto.woff);
+    font-family:myRistretto;
+    src: url(Ristretto.otf);
 }
 
 body{
