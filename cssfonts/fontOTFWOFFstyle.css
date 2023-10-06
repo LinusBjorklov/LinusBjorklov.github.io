@@ -1,0 +1,28 @@
+@font-face {
+    font-family:myMayestica;
+    src: url(Mayestica.otf);
+    font-family:myRisteretto;
+    src: url(ristretto.woff);
+}
+
+body{
+    background-color: #EBF7E3;
+}
+
+div{
+    background-color: #9BD770;
+    background-image: linear-gradient(#EBF7E3,#9BD770);
+    box-shadow: 5px 5px black;
+    margin: 25px;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+}
+
+.a{
+    font-family: myMayestica,sans-serif;
+}
+
+.b{
+    font-family:myRistretto,sans-serif;
+}
