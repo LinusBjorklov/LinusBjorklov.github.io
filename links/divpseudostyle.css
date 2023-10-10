@@ -1,0 +1,12 @@
+body{
+    background-color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+div{
+    border-radius: 15px;
+    text-align: center;
+    border-color: white;
+    border-radius: 10px;
+}
