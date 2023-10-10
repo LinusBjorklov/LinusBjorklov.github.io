@@ -4,9 +4,21 @@ body{
     font-size: 1em;
 }
 
+h2{
+    color: red;
+}
+
 div{
     border-radius: 15px;
     text-align: center;
     border-color: white;
     border-radius: 10px;
+}
+
+.b:focus{
+    background-color: darkblue;
+}
+
+.c:hover{
+    color: blue;
 }
