@@ -1,6 +1,8 @@
 body{
     background-color: limegreen;
     scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
 }
 
 #start{
