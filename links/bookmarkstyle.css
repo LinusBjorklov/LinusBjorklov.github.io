@@ -1,4 +1,13 @@
 body{
     background-color: limegreen;
-    
+
+}
+
+span{
+    font-weight: bold;
+}
+
+#start{
+    width: 20px;
+    height: auto;
 }
