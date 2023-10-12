@@ -1,10 +1,6 @@
 body{
     background-color: limegreen;
-
-}
-
-span{
-    font-weight: bold;
+    scroll-behavior: smooth;
 }
 
 #start{
