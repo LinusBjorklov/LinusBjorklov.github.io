@@ -11,6 +11,8 @@ button{
     color: blue;
     padding-top: 5px;
     background-color: grey;
+    border-radius: 8px;
+    margin: 8px;
 }
 
 div{  
@@ -35,5 +37,5 @@ button:hover{
 }
 
 .green{
-    border-left: green ridge;
+    border-left: green 8px ridge;
 }
