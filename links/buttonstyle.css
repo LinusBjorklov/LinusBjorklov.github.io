@@ -23,15 +23,15 @@ button:hover{
 }
 
 .red{
-    border-left: red ridge;
+    border-left: red 8px ridge;
 }
 
 .yellow{
-    border-left: yellow ridge;
+    border-left: yellow 8px ridge;
 }
 
 .blue{
-    border-left: blue ridge;
+    border-left: blue 8px ridge;
 }
 
 .green{
