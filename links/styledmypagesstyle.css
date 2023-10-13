@@ -16,12 +16,12 @@ div{
 
 .a{
     width: 120px;
+    border-radius: 15px;
+    border: 2px solid grey;
 }
 
 a{
-    border-radius: 15px;
     color: grey;
-    border: 2px solid grey;
     padding: 2px;
     margin:2px;
 }
