@@ -2,14 +2,11 @@ body{
     background-color: limegreen;
 }
 
-div{
-    height: auto;
-    width: 50px;
-}
-
 a{
     padding: 10px;
     margin: 10px;
+    height: auto;
+    width: 50px;
 }
 
 a:active{
