@@ -7,8 +7,5 @@ a{
     margin: 10px;
     height: auto;
     width: 50px;
-}
-
-a:active{
-    color: rgb(78, 208, 252);
+    float: left;
 }
