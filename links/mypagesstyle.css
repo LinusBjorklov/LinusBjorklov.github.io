@@ -1,0 +1,17 @@
+body{
+    background-color: limegreen;
+}
+
+div{
+    height: auto;
+    width: 50px;
+}
+
+a{
+    padding: 10px;
+    margin: 10px;
+}
+
+a:active{
+    color: rgb(78, 208, 252);
+}
