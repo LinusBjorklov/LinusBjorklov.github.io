@@ -6,29 +6,36 @@ body{
 
 .b{
     width: 150px;
-    height: 250px;
+    height: 310px;
     float: left;
     background-color: rgb(255, 193, 77);
     margin: 10px;
     padding: 10px;
-    text-align: center;
     box-shadow: 5px 5px black;
+    
+}
+
+h2{
+    text-align: center;
 }
 
 .a{
-    width: 120px;
+    width: 140px;
     height: 25px;
     border-radius: 15px;
     border: 2px solid grey;
+    margin: 2px;
+    text-align: center;
 }
 
 a{
     color: grey;
-    padding: 2px;
-    margin:2px;
+}
+
+.a:hover{
+    background-color: black;
 }
 
 a:hover{
-    background-color: black;
     color: orange;
 }
