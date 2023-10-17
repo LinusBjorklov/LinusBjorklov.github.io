@@ -4,7 +4,7 @@ body{
     font-size: 1em;
 }
 
-div{
+.b{
     width: 150px;
     height: 250px;
     float: left;
@@ -12,10 +12,12 @@ div{
     margin: 10px;
     padding: 10px;
     text-align: center;
+    box-shadow: 5px 5px black;
 }
 
 .a{
     width: 120px;
+    height: 25px;
     border-radius: 15px;
     border: 2px solid grey;
 }
