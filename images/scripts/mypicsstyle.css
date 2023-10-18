@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(135, 255, 79);
+}
+
+img{
+    box-shadow: 5px 5px black;
+}
+
+.earth{
+    border: 1px blue;
+}
+
+.moon{
+    border: 1px gray;
+}
+
+.mars{
+    border: 1px orange;
+}
