@@ -3,9 +3,6 @@ body{
 }
 
 div{
-    box-shadow: 5px 5px black;
-    width: 600px;
-    height: 200px;
     float: left;
     padding: 0;
     margin: 0;
@@ -14,6 +11,7 @@ div{
 img{
     width: 200px;
     height: 200px;
+    box-shadow: 5px 5px black;
 }
 
 .earth{
