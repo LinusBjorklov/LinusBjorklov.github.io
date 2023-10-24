@@ -5,6 +5,8 @@ body{
 table{
     box-shadow: 5px 5px black;
     border: 2px solid blue;
+    border-collapse: collapse;
+    text-align: center;
 }
 
 thead{
@@ -13,4 +15,9 @@ thead{
 
 tfoot{
     color: darkblue;
+}
+
+th, td{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 10px;
 }
