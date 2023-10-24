@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(78, 255, 78);
+}
+
+table{
+    box-shadow: 5px 5px black;
+    border: 2px solid blue;
+}
+
+thead{
+    color: red;
+}
+
+tfoot{
+    color: darkblue;
+}
