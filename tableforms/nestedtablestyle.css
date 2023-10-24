@@ -2,3 +2,15 @@ body{
     background-color:  rgb(78, 255, 78);
 }
 
+.boss{
+    border: 2px solid blue;
+    box-shadow: 5px 5px black;
+}
+
+.purple{
+    color: purple;
+}
+
+thead{
+    text-align: center;
+}
