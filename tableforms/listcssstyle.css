@@ -3,7 +3,7 @@ body{
 }
 
 .roman{
-    list-style: lower-roman;
+    list-style: upper-roman;
 }
 
 .none{
@@ -22,4 +22,5 @@ ul{
 .boss{
     color: purple;
     background-color: white;
+    list-style-type: none;
 }
