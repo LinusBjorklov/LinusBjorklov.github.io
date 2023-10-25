@@ -20,6 +20,7 @@ ul{
 }
 
 .boss{
+    border: 2px solid blue;
     color: purple;
     background-color: white;
     list-style-type: none;
