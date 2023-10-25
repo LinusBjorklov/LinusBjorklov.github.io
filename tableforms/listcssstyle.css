@@ -24,3 +24,7 @@ ul{
     background-color: white;
     list-style-type: none;
 }
+
+ul, ol{
+    width: 500px;
+}
