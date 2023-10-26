@@ -7,25 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Form with fieldset</h1>
     <form>
         <fieldset>
           <legend>Login</legend>
           <label class="blue" for="Username">Username:
             <input type="text" name="Username" required>
-        </label>
+        </label><br>
         <label class="blue" for="Password">Password:
             <input type="password" name="Password" required>
         </label>
         </fieldset>
         <fieldset>
             <legend>Gender*</legend>
-            <input type="radio" value="Male">
+            <input type="radio" value="Male"><br>
             <input type="radio" value="Female">
         </fieldset>
         <fieldset>
             <legend>Programming Skill</legend>
-            <input type="checkbox" value="Java">
-            <input type="checkbox" value="C++">
+            <input type="checkbox" value="Java"><br>
+            <input type="checkbox" value="C++"><br>
             <input type="checkbox" value="C#">
         </fieldset>
         <fieldset>
@@ -42,10 +43,8 @@
             <legend>Comment</legend>
             <textarea name="message" cols="30" rows="10">Enter yor comment here</textarea>
         </fieldset>
-        <fieldset>
-            <input type="submit" value="Send">
-        </fieldset>
-      </form>
+        <input type="submit" value="Send">
+    </form>
     
 </body>
 </html>
