@@ -26,6 +26,6 @@ ul{
     list-style-type: none;
 }
 
-ul, ol, dt{
+ul, ol, dl{
     width: 500px;
 }
