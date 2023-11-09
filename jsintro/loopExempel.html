@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        
-    </script>
 </head>
+
 <body>
-    
+    <h2>Först med for</h2>
+    <div id="for"></div>
+    <h2>Nu med while</h2>
+    <div id="while"></div>
+
+    <script>
+        const forEl = document.getElementById("for")
+        const whileEl = document.getElementById("while")
+        const msg = "hej mitt namn är linus och jag heter linus"
+
+        for (let i = 0; i < msg.length; i++) {
+            forEl.innerText += msg[i] + "-"
+        }
+        let n = 0
+        while (n < msg.length) {
+            whileEl.innerText += msg[n] + "-"
+            n++            
+        }
+    </script>
 </body>
+
 </html>
