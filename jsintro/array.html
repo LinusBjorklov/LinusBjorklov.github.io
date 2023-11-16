@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Example</title>
+    <script>
+        // Skapa array med 6 element
+        var cities = ["Dubai", "Paris", "Mumbai", "Dallas", "Houston", "Madrid"];
+
+        // Lägg till 3 element med push och prompt
+        for (var i = 0; i < 3; i++) {
+            var city = prompt("Skriv in en stad:", "Exempelstad");
+            cities.push(city);
+        }
+
+        // Utskriftsfunktion med forEach
+        function utskriftFunction(value, index) {
+            document.write("cities: [" + index + "]: Value: " + value + "<br>");
+        }
+
+        // Skriv ut alla element med forEach
+        document.write("<h3>Utskrift med forEach:</h3>");
+        cities.forEach(utskriftFunction);
+
+        // Använd pop, shift, splice, delete
+        cities.pop(); // Ta bort sista elementet
+        cities.shift(); // Ta bort första elementet
+        cities.splice(2, 0, "Stockholm"); // Lägg till "Stockholm" på tredje plats
+        delete cities[2]; // Ta bort tredje elementet
+
+        // Utskrift efter varje steg med forEach
+        document.write("<h3>Utskrift efter ändringar:</h3>");
+        cities.forEach(utskriftFunction);
+
+        // Skriv ut totala antalet element
+        document.write("<p>Totala antalet element: " + cities.length + "</p>");
+
+        // Hitta positionen för "Dallas" och första elementet
+        var dallasPosition = cities.indexOf("Dallas");
+        var firstElement = cities[0];
+        document.write("<p>Dallas finns på position: " + dallasPosition + "</p>");
+        document.write("<p>Första elementet: " + firstElement + "</p>");
+
+        // Ändra arrayens längd till 1 och skriv ut totala antalet element
+        cities.length = 1;
+        document.write("<p>Totala antalet element efter ändring av längd: " + cities.length + "</p>");
+    </script>
+</head>
+<body>
+    <!-- Tom body, all kod är i head-sektionen -->
+</body>
+</html>

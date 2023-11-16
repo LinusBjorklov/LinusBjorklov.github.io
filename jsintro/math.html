@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+    <script>
+        function calculateAndWrite() {
+            var input = prompt("Ange ett heltal:", "0");
+            var integerNumber = Number.parseInt(input);
+
+            if (!Number.isNaN(integerNumber)) {
+                var squareRoot = Math.sqrt(integerNumber);
+                var powerOfTwo = Math.pow(integerNumber, 2);
+                var logBase10 = Math.log10(integerNumber);
+                var sinValue = Math.sin(integerNumber);
+                var randomBetween5And15 = Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+                var piValue = Math.PI;
+
+                document.write("<p>numret : " + integerNumber + "</p>");
+                document.write("<p>Log10" + " : " + logBase10.toFixed(2) + "</p>");
+                document.write("<p>Kvadratroten av " + integerNumber + " är: " + squareRoot.toFixed(2) + "</p>");
+                document.write("<p>pi: " + piValue.toFixed(2) + "</p>");
+                document.write("<p>" + integerNumber + " upphöjt till 2 är: " + powerOfTwo.toFixed(2) + "</p>");
+                document.write("<p>Sin " + integerNumber + " är: " + sinValue.toFixed(2) + "</p>");
+                document.write("<p>Ett slumpmässigt heltal mellan 5 och 15 är: " + randomBetween5And15 + "</p>");
+            } else {
+                document.write("<p>Du matade inte in ett giltigt heltal.</p>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Matematiska operationer</h1>
+    <script>
+        calculateAndWrite();
+    </script>
+</body>
+</html>
