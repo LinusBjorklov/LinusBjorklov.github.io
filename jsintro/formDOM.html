@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Color Changer</title>
+  <style>
+    body {
+      background-color: #ff6666; /* Nästan röd */
+      color: white;
+    }
+  </style>
+  <script>
+    function changeBackgroundColor(form) {
+      var radioButtons = form.name_radioGrupp;
+
+      for (var i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {
+          var selectedColor = radioButtons[i].value;
+          document.getElementById("b").style.backgroundColor = selectedColor;
+          break; // Avsluta loopen när en vald radio-knapp hittas
+        }
+      }
+    }
+
+    function resetBackgroundColor() {
+      document.getElementById("b").style.backgroundColor = "#ff6666"; // Återställ till default färg
+    }
+  </script>
+</head>
+<body id="b">
+    <h1>Selekt bakgrundsfärg?</h1>
+  <form name="colorForm">
+    <input type="radio" name="name_radioGrupp" value="#ff0000"> Röd<br>
+    <input type="radio" name="name_radioGrupp" value="#00ff00"> Grön<br>
+    <input type="radio" name="name_radioGrupp" value="#0000ff"> Blå<br>
+    <input type="radio" name="name_radioGrupp" value="#00ff99"> Akvamarin - almost grönblå
+    <br>
+    <button type="button" onclick="changeBackgroundColor(this.form)">Välj färg</button>
+    <button type="button" onclick="resetBackgroundColor()">Återställ</button>
+  </form>
+</body>
+</html>
