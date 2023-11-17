@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Buttons</title>
+    <script>
+        function printText(inputField) {
+            var inputValue = inputField.value;
+            alert("Innehållet i textfältet är: " + inputValue);
+        }
+
+        function greetInChinese() {
+            alert("你好 (Ni hao) - Hello in Chinese");
+        }
+
+        function greetInJapanese() {
+            alert("こんにちは (Konnichiwa) - Hello in Japanese");
+        }
+
+        function greetInHindi() {
+            alert("नमस्ते (Namaste) - Hello in Hindi");
+        }
+
+        function changeBackgroundColor(inputField) {
+            inputField.style.background = "yellow";
+        }
+
+        function changeBackgroundCityColor(cityField) {
+            cityField.style.background = "green";
+        }
+
+        function resetBackgroundColor(inputField) {
+            inputField.style.background = "white";
+        }
+    </script>
+    <style>
+        button{
+            background-color: aquamarine;
+            border: 1px solid rgb(165, 165, 165);
+        }
+    </style>
+</head>
+<body>
+    <h1>Form and Buttons</h1>
+    <form>
+        <label for="exampleField">Exempeltextfält:</label>
+        <input type="text" id="exampleField"><br><br>
+        <button type="button" onclick="printText(this.form.exampleField)">Skriv ut textfält</button>
+    </form>
+
+    <br>
+    <p>Hej i olika länder</p>
+    <br>
+
+    <button type="button" onclick="greetInChinese()">Kinesiska (han)</button>
+    <button type="button" onclick="greetInJapanese()">Japanska</button>
+    <button type="button" onclick="greetInHindi()">Indiska (hindi)</button>
+
+    <br><br>
+
+    <label for="nameField">Namn:</label>
+    <input type="text" id="nameField" onfocus="changeBackgroundColor(this)" onblur="resetBackgroundColor(this)">
+
+    <br><br>
+
+    <label for="cityField">Stad: </label>
+    <input type="text" id="cityField" onfocus="changeBackgroundCityColor(this)" onblur="resetBackgroundColor(this)">
+
+</body>
+</html>
