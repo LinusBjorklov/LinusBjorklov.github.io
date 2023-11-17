@@ -11,19 +11,19 @@
             var todayDate = new Date();
 
             var currentYear = todayDate.getFullYear();
-            var specificDate = new Date("August 30, " + currentYear);
+            var specificDate = new Date("August 30, " + 2014);
 
-            document.write("<p>Andra datumet: " + specificDate + "</p>");
+            document.write("Datum " + todayDate)
+            document.write("<p>Specifikt datum: " + specificDate + "</p>");
 
             var minutes = todayDate.getMinutes();
             var seconds = todayDate.getSeconds();
             var year = todayDate.getFullYear();
             var hours = todayDate.getHours();
 
-            document.write("<p>Minuter: " + minutes + "</p>");
-            document.write("<p>Sekunder: " + seconds + "</p>");
+            
             document.write("<p>År: " + year + "</p>");
-            document.write("<p>Timmar: " + hours + "</p>");
+          
             document.write("Tid" + ": " + hours + ":" + minutes +":" + seconds)
 
             var endOfYearDate = new Date("December 31, " + currentYear);
