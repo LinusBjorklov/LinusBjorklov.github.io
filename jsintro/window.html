@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Window Operations</title>
+    <style>
+        button {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        var popupWindow;
+
+        function openPopup() {
+            popupWindow = window.open("snowleopard.jpg", "Popup", "width=1050,height=400,top=100,left=100");
+            popupWindow.focus();
+        }
+
+        function closePopup() {
+            if (popupWindow) {
+                popupWindow.close();
+            }
+        }
+
+        function moveResizePopup() {
+            if (popupWindow) {
+                popupWindow.moveTo(250, 0);
+                popupWindow.resizeTo(800, 400);
+                popupWindow.focus();
+            }
+        }
+
+        function getParentInfo() {
+            var parentWidth = window.innerWidth;
+            var parentHeight = window.innerHeight;
+            document.getElementById("par").innerHTML = "Fönsterbredd: " + parentWidth + "px, Fönsterhöjd: " + parentHeight + "px";
+        }
+    </script>
+</head>
+<body>
+    <h1>Popup Window Operations</h1>
+    <button onclick="openPopup()">Öppna Popup</button>
+    <button onclick="closePopup()">Stäng Popup</button>
+    <button onclick="moveResizePopup()">Flytta/Ändra storlek på Popup</button>
+    <button onclick="getParentInfo()">Info om Parent Fönster</button>
+    <p id="par"></p>
+</body>
+</html>
