@@ -1,11 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Date Operations</title>
+    <script>
+        function dateOperations() {
+            
+            var todayDate = new Date();
+
+            var currentYear = todayDate.getFullYear();
+            var specificDate = new Date("August 30, " + currentYear);
+
+            document.write("<p>Andra datumet: " + specificDate + "</p>");
+
+            var minutes = todayDate.getMinutes();
+            var seconds = todayDate.getSeconds();
+            var year = todayDate.getFullYear();
+            var hours = todayDate.getHours();
+
+            document.write("<p>Minuter: " + minutes + "</p>");
+            document.write("<p>Sekunder: " + seconds + "</p>");
+            document.write("<p>År: " + year + "</p>");
+            document.write("<p>Timmar: " + hours + "</p>");
+            document.write("Tid" + ": " + hours + ":" + minutes +":" + seconds)
+
+            var endOfYearDate = new Date("December 31, " + currentYear);
+            var daysToNewYear = Math.floor((endOfYearDate - todayDate) / (1000 * 60 * 60 * 24));
+
+             document.write("<p>Antal dagar till nytt år: " + daysToNewYear + "</p>");
+        }
+    </script>
 </head>
 <body>
-    
+    <h1>Date Operations</h1>
+    <script>
+        dateOperations();
+    </script>
 </body>
 </html>
