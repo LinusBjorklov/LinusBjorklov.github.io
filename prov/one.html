@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgreen;
+            margin: 75px;
+}
+        table{
+            border: 2px solid blue;
+            border-collapse: collapse;
+            align-items: center;
+        }
+        thead{
+            color: red;
+        }
+        tfoot{
+            color: green;
+        }
+        th, td{
+            border: 1px solid green;
+            padding: 5px 10px;
+        }
+        legend{
+            color: purple;
+            background-color: rgb(8, 216, 8);
+            width: 150px;
+        }
+        .blue{
+            color: blue;
+        }
+        form{
+            padding: 15px;
+            margin: 15px;
+        }
+        .name{
+            height: 90px;
+        }
+        .car{
+            height: 150px;
+        }
+        .nation{
+            height: 35px;
+        }
+        .button{
+            background-color: rgb(255, 255, 175);
+        }
+        table, form{
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formula 1</h1>
+    <table>
+        <caption><i>2023 driver standings</i></caption>
+        <thead>
+            <tr>
+                <th>Pos</th>
+                <th colspan="3">Driver</th>
+                <th colspan="3">Nationality</th>
+                <th colspan="3">Car</th>
+                <th colspan="3">PTS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td colspan="3">Verstappen</td>
+                <td colspan="3">NED</td>
+                <td colspan="3">Red Bull</td>
+                <td colspan="3">549</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td colspan="3">Perez</td>
+                <td colspan="3">MEX</td>
+                <td colspan="3">Red Bull</td>
+                <td colspan="3">273</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td colspan="3">Hamilton</td>
+                <td colspan="3">GBR</td>
+                <td colspan="3">Mercedes</td>
+                <td colspan="3">232</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td colspan="3">Sainz</td>
+                <td colspan="3">ESP</td>
+                <td colspan="3">Ferrari</td>
+                <td colspan="3">200</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td colspan="3">Alonso</td>
+                <td colspan="3">ESP</td>
+                <td colspan="3">Aston Martin</td>
+                <td colspan="3">200</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td colspan="3">Norris</td>
+                <td colspan="3">GBR</td>
+                <td colspan="3">McLaren</td>
+                <td colspan="3">195</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="10">Total 6 drivers</td>
+            <td colspan="3">Total: 1649</td>
+        </tfoot>
+    </table>
+
+    <form>
+        <fieldset class="name">
+            <legend>Name of driver</legend>
+            <label class="blue" for="Firstname">First name:*
+              <input type="text" name="Firstname" required>
+          </label><br><br>
+          <label class="blue" for="Lastname">Last name:*
+              <input type="text" name="Lastname" required>
+          </label>
+          </fieldset>
+          <fieldset class="car">
+            <legend>Car*</legend>
+            <label class="blue" for="Redd Bull">Red Bull
+                <input type="radio" name="car"><br>
+            </label><br>
+            <label class="blue" for="Mercedes">Mercedes
+                <input type="radio" name="car"><br>
+            </label><br>
+            <label class="blue" for="Ferrari">Ferrari
+                <input type="radio" name="car"><br>
+            </label><br>
+            <label class="blue" for="Aston Martin">Aston Martin
+                <input type="radio" name="car"><br>
+            </label>
+        </fieldset>
+        <fieldset class="nation">
+            <legend>Nationality</legend>
+            <label for="fruit">Choose a nationality:</label>
+            <select name="nationality">
+                <option value="NED">NED</option>
+                <option value="ESP">ESP</option>
+                <option value="GBR">GBR</option>
+                <option value="MEX">MEX</option>
+            </select>
+        </fieldset>
+            <input type="submit" class="button" value="Send">
+    </form>
+</body>
+</html>

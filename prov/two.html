@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 75px;
+        }
+        button{
+            float: left;
+            width: 60px;
+            height: 30px;
+            align-items: center;
+            background-color: aqua;
+        }
+        button, label{
+            margin: 30px;
+        }
+    </style>
+    <script>
+        function add(){
+            var numone = Number(document.getElementById("numone").value);
+            var numtwo = Number(document.getElementById("numtwo").value);
+            var x = numone + numtwo;
+            alert(x) 
+        }
+        function remove(){
+            var numone = document.getElementById("numone").value;
+            var numtwo = document.getElementById("numtwo").value;
+            var x = numone - numtwo;
+            alert(x) 
+        }
+        function multi(){
+            var numone = document.getElementById("numone").value;
+            var numtwo = document.getElementById("numtwo").value;
+            var x = numone * numtwo;
+            alert(x) 
+        }
+        function delat(){
+            var numone = document.getElementById("numone").value;
+            var numtwo = document.getElementById("numtwo").value;
+            var x = numone / numtwo;
+            alert(x) 
+        }
+
+    </script>
+</head>
+<body>
+    <label for="numone">Tal 1:
+        <input type="text" id="numone" name="numone">
+    </label><br><br>
+    <label for="numtwo">Tal 2:
+        <input type="text" id="numtwo" name="numtwo">
+    </label><br>
+    <button type="button" onclick="add()">+</button>
+    <button type="button" onclick="remove()">-</button>
+    <button type="button" onclick="multi()">*</button>
+    <button type="button" onclick="delat()">/</button>
+</body>
+</html>
