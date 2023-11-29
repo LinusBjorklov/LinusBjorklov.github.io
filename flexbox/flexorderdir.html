@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: darkred;
+            text-align: center;
+        }
+        .head{
+            display: flex;
+
+        }
+        .article{
+            background-color: aqua;
+            text-align: center;
+            order: 2;
+            flex: 60%;
+        }
+        #news, #contact{
+            background-color: tomato;
+        }
+        #news{
+            order: 1;
+        }
+        #contact{
+            order: 3;
+        }
+        .footer{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p class="header">Hip & happening inline</p>
+    <div class="head">
+     <div class="article"><h2>Where It's At</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget tristique elit. Etiam euismod dictum lectus, ut efficitur diam tristique facilisis. Cras sem tortor, dignissim at massa ut,fermentum molestie ligula. Mauris purus nisi, lacinia ac sem id, pretium sagittis mi. Nunc ultricies odio id ipsum bibendum, non posuere nisl consequat. Aliquam non pellentesque velit.     Quisque sit amet pretium odio. In convallis quis lectus non laoreet. Integer non erat quis eros elementum ultricies quis in tellus. </p></div>
+     <div id="news"><h2>News</h2></div>
+     <div id="contact"><h2>Contact</h2></div>
+    </div> 
+    <p class="footer">The small print</p>
+
+</body>
+</html>
