@@ -13,27 +13,36 @@
             flex-direction: column;
         }
         ul{
+            display: flex; 
             flex-direction: row;
             list-style: none;
+            justify-content: space-between;
+            padding: 10px; 
+            margin: 10px;
+            gap: 10px;
         }
+
+        .second{
+            background: no-repeat url("croissants.jpg");
+            background-size: 100vh 9em;
+            color: white;
+            font-size: 2em;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        li{
+            border: 2px solid white;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            padding: 10px; 
+        }
+
         .head{
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        li{
-            border: 1px solid white;
-            border-radius: 4px;
-            color: white;
-            text-align: center;
-        }
-        .second{
-            background: no-repeat url("croissants.jpg");
-            background-size: 100vh;
-            color: white;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 2em;
-            text-align: center;
+            align-items: center; 
         }
         
         @media screen and (min-width: 550px) {
