@@ -5,27 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .main{
+        body{
+            background-color: rgb(165, 80, 0);
+        }
+        #main{
             display: flex;
             flex-direction: column;
         }
         ul{
             flex-direction: row;
+            list-style: none;
+        }
+        .head{
+            display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        li{
+            border: 1px solid white;
+            border-radius: 4px;
+            color: white;
         }
         .second{
             background: no-repeat url("croissants.jpg");
             background-size: 100vh 9em;
         }
-
+        h2{
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2em;
+        }
         @media screen and (min-width: 550px) {
             
         }
     </style>
 </head>
 <body>
-    <div class="main">
-    <div>
+    <div id="main">
+    <div class="head">
         <ul>
             <li>MENU <ion-icon name="menu-outline" style="color: white;"></ion-icon></li>
             <li>NEWS <ion-icon name="newspaper" style="color: rgb(80, 80, 255);"></ion-icon></li>
