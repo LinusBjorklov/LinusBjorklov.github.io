@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 380px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .header{
+            background-color: tomato;
+            order: 1;
+        }
+        .main{
+            background-color: lightblue;
+            order: 2;
+        }
+        .aside-1{
+            background-color: yellow;
+            order: 3;
+        }
+        .aside-2{
+            background-color: pink;
+            order: 4;
+        }
+        .footer{
+            background-color: lightgreen;
+            order: 5;
+        }
+        .footer, .aside-1, .aside-2, .header{
+            height: 30px;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
