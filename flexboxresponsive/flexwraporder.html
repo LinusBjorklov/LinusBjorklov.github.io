@@ -5,43 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            text-align: center;
+        }
         .wrapper{
             display: flex;
-            flex-direction: column;
-            width: 380px;
-            text-align: center;
-            font-family: 'Times New Roman', Times, serif;
+            flex-wrap: wrap;
         }
         .header{
             background-color: tomato;
+            flex: 1 100%;
             order: 1;
+            height: 30px;
         }
         .main{
             background-color: lightblue;
             order: 2;
         }
-        .aside-1{
-            background-color: yellow;
-            order: 3;
-        }
-        .aside-2{
-            background-color: pink;
-            order: 4;
-        }
         .footer{
             background-color: lightgreen;
+            flex: 1 100%;
             order: 5;
-        }
-        .footer, .aside, .header{
             height: 30px;
-            align-items: center;
         }
-        @media screen and (min-width: 560px) and (max-width: 860px) {
+        .aside-1{
+            background-color: gold;
+            order: 3;
+            flex: 1 100%;
+            height: 30px;
+        }
+        .aside-2{
+            background-color: hotpink;
+            order: 4;
+            flex: 1 100%;
+            height: 30px;
+        }
+        @media screen and (min-width: 560px){
             .aside{
-                order: 3;
+                flex-basis: 0;
             }
-            .footer{
-                order: 4;
+        }
+        @media screen and (min-width: 900px) {
+            .aside, .main{
+                flex-basis: 0;
+            }
+            .main{
+                flex-grow: 3;
+                order: 2;
+            }
+            .aside{
+                flex-grow: 1;
+                height: 100%;
+            }
+            .aside-1{
+                order: 1;
+            }
+            .aside-2{
+                order: 3;
             }
         }
     </style>
