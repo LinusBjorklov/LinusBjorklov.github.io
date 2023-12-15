@@ -13,20 +13,20 @@
             background-color: rgb(34, 86, 153);
         }
         .blue{
-            color: blue;
+            color: rgb(71, 0, 255);
         }
         .all{
             display: flex;
-            flex-wrap: wrap;
             flex-direction: column;
         }
         li{
-            border: 5px 5px lightgreen;
+            box-shadow: 3px 3px rgb(7, 221, 114);
             text-align: center;
             justify-content: space-between;
             background-color: rgb(221, 221, 221);
-            margin: 5px;
-            padding: 5px;
+            margin: 10px;
+            padding: 15px;
+            
         }
         .header{
             display: flex;
@@ -37,17 +37,47 @@
             flex-direction: row;
             list-style-type: none;
         }
+        .body{
+            box-shadow: 3px 3px rgb(7, 177, 31);
+            background-color: rgb(221, 221, 221);
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            flex: 1 20%;
+        }
+        button{
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 30px;
+            padding: 15px;
+            margin: 5px;
+        }
+        .footer{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .footer > div{
+            background-color: rgb(221, 221, 221);
+            box-shadow: 3px 3px red;
+            padding: 15px;
+            margin: 5px;
+            flex: 1 20%;
+        }
     </style>
 </head>
 <body>
     <div class="all">
         <div class="header">
-            <div>
+            <div class="e">
                 <ul>
                     <li><a>HOME</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="e">
                 <ul>
                     <li><a>ABOUT</a></li>
                     <li><a>SERVICES</a></li>
@@ -98,10 +128,6 @@
                         <input type="radio" name="gender">
                     </label>
                 </fieldset>
-            </form>
-        </div>
-        <div class="forms">
-            <form>
                 <fieldset>
                     <legend>Programming Skill</legend>
                     <label class="blue">Java
@@ -116,7 +142,6 @@
                 </fieldset>
                 <input type="submit" value="Send">
             </form>
-        </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
