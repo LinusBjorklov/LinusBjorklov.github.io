@@ -189,10 +189,12 @@ legend{
     }
     .e{
         order: 1;
+        margin: 0;
     }
     .r{
         order: 2;
-        margin: -10px;
+        margin-top: -2rem;
+        margin-right: 0;
     }
     .header{
         flex-direction: column;   
@@ -200,14 +202,8 @@ legend{
     ul{
         flex-direction: column;
     }
-    .e, .r{
-        margin: 0;
-    }
-    .e{
-        margin-bottom: -10px;
-    }
-    .r{
-        margin-bottom: -30px;
+    .r > ul {
+        flex-direction: row;
     }
     li{
         flex: 100%;
@@ -238,9 +234,9 @@ legend{
         <div class="body">
             <img id="colorchanger" src="pic1.jpg" alt="lampa">
             <div class="text">
-                <h1>Your Business On the Web</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <button>Read More</button>
+                <h1 class="colorOne">Your Business On the Web</h1>
+                <p class="colorTwo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <button id="addText">Read More</button>
             </div>
         </div>
         <div class="footer">
@@ -306,5 +302,14 @@ legend{
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('colorchanger').addEventListener('click', function() {
+                document.querySelector('.colorTwo').style.backgroundColor = '#add8e6';
+                document.querySelector('.colorOne').style.backgroundColor = '#90ee90';
+                document.getElementById("addText").textContent = "Read Enough";
+            });
+        });
+    </script>
 </body>
 </html>
