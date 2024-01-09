@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(34, 255, 153);
+}
+.all{
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; 
+    text-align: center;
+    padding: 10px;
+}
+
+.r{
+    flex: 1; 
+    margin-right: 5%;
+}
+
+.e{
+    flex: 3;
+    margin-left: 5%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around; 
+    padding: 0; 
+}
+
+li {
+    background-color: rgb(221, 221, 221);
+    box-shadow: 4px 4px rgb(211, 51, 114);
+    margin: 10px;
+    padding: 15px;
+    flex: 1; 
+}
+
+.body{
+    box-shadow: 4px 4px rgb(7, 51, 191);
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    padding: 0;
+}
+
+.text{
+    margin-left: 20%;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.footer{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+.footer > div{
+    background-color: rgb(221, 221, 221);
+    box-shadow: 3px 3px rgb(211, 51, 31);
+    padding: 15px;
+    margin: 5px;
+    flex: 1 20%;
+    text-align: center;
+}
+
+.size{
+    font-size: 2rem;
+}
+
+.forms{
+    display: flex;
+    align-self: center;
+}
+
+form{
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 10px;
+    color: rgb(0, 0, 255);
+    box-shadow: 3px 3px rgb(0, 143, 71);
+}
+fieldset{
+    padding: 10px;
+    border: 1px solid grey;
+}
+legend{
+    background-color: rgb(166, 238, 178);
+    color: rgb(129, 13, 224);
+}
+label{
+    padding: 20px;
+}
+fieldset > input{
+    padding: 20px;
+    margin: 10px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.test{
+    flex-direction: column;
+}
+.send{
+    width: 40px;
+    align-self: center;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 650px) {
+    .forms{
+        display: none;
+    }
+    .header{
+        flex-direction: column;   
+    }
+    ul{
+        flex-direction: column;
+    }
+    .e, .r{
+        margin: 0;
+    }
+    .e{
+        margin-bottom: -10px;
+    }
+    .r{
+        margin-bottom: -32px;
+    }
+    li{
+        flex: 100%;
+    }
+    .body{
+        flex-direction: row-reverse;
+    }
+    .text{
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .body, .forms{
+        display: none;
+    }
+    .e{
+        order: 1;
+    }
+    .r{
+        order: 2;
+        margin: -10px;
+    }
+    .header{
+        flex-direction: column;   
+    }
+    ul{
+        flex-direction: column;
+    }
+    .e, .r{
+        margin: 0;
+    }
+    .e{
+        margin-bottom: -10px;
+    }
+    .r{
+        margin-bottom: -30px;
+    }
+    li{
+        flex: 100%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="nav">
+            <div class="r">
+                <ul>
+                    <li>HOME</li>
+                    <li>NEWS</li>
+                </ul>
+            </div>
+            <div class="e">
+                <ul>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <img id="colorchanger" src="pic1.jpg" alt="lampa">
+            <div class="text">
+                <h1>Your Business On the Web</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <ion-icon name="invert-mode-outline" class="size" style="color: yellow;"></ion-icon>
+                <h1>Analytics</h1>
+                <p>Lorem ipsum, consectetur elit.</p>
+            </div>
+            <div>
+                <ion-icon name="bookmark-sharp" class="size" style="color: red;"></ion-icon>
+                <h1>Marketing</h1>
+                <p>Lorem ipsum, consectetur elit.</p>
+            </div>
+            <div>
+                <ion-icon name="layers-sharp" class="size" style="color: blue;"></ion-icon>
+                <h1>Development</h1>
+                <p>Lorem ipsum, consectetur elit.</p>
+            </div>
+            <div>
+                <ion-icon name="call" class="size" style="color: rgb(104, 255, 104)";></ion-icon> 
+                <h1>Support</h1>
+                <p>Lorem ipsum, consectetur elit.</p>
+            </div>
+        </div>
+        <div class="forms">
+            <form class="forms test">
+                <fieldset>
+                    <legend>Your Name</legend>
+                    <label class="blue" for="firstname">First name:*
+                      <input class="yellow" type="text" name="firstname" required>
+                  </label><br>
+                  <label class="blue" for="lastname">Last name:*
+                      <input class="yellow" type="text" name="lastname" required>
+                  </label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Nationality</legend>
+                    <label for="nation">Choose a nationality:</label>
+                    <select name="nation">
+                        <option value="Ned">Ned</option>
+                        <option value="Swe">Swe</option>
+                        <option value="USA">USA</option>
+                        <option value="GBR">GBR</option>
+                    </select>
+                </fieldset>
+            </form>
+            <form class="forms test">
+                <fieldset>
+                    <legend>Skills</legend>
+                    <label>Electrician
+                        <input type="checkbox" value="Java"><br>
+                    </label>
+                    <label>Baker
+                        <input type="checkbox" value="C++"><br>
+                    </label>
+                    <label>Carpenter
+                        <input type="checkbox" value="C#">
+                    </label>
+                </fieldset>
+                <input type="submit" class="send" value="Send">
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
